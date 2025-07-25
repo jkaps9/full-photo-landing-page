@@ -17,6 +17,7 @@ body {
   --header-height: 4rem;
   --maximum-width: 1440px;
   --background-color: #fff;
+  --dark-background-color: #1a1a1a;
   --main-text-color: #000;
   --accent-color: #f5ae20;
 }
@@ -206,5 +207,29 @@ main {
     .text {
       align-items: flex-start;
     }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: var(--dark-background-color);
+    color: var(--background-color);
+  }
+
+  .hamburger svg {
+    fill: var(--background-color);
+  }
+
+  nav ul li a,
+  #hero .cta a {
+    color: var(--background-color);
+  }
+
+  .main-menu ul li:hover {
+    border-bottom: 1px solid var(--background-color);
+  }
+
+  header .mobile-menu {
+    background: var(--dark-background-color);
   }
 }
