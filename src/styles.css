@@ -16,6 +16,9 @@ body {
   place-items: center;
   --header-height: 4rem;
   --maximum-width: 1440px;
+  --background-color: #fff;
+  --main-text-color: #000;
+  --accent-color: #f5ae20;
 }
 
 li {
@@ -24,7 +27,6 @@ li {
 
 a {
   text-decoration: none;
-  color: inherit;
 }
 
 /* HEADER */
@@ -96,6 +98,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 12rem;
 
     color: #fff;
 
@@ -106,6 +109,16 @@ main {
 
     p {
       font-size: 1.5rem;
+    }
+
+    .cta button {
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+      background: var(--accent-color);
+      border: none;
+      border-radius: 0.3rem;
+      color: var(--main-text-color);
+      border: 1px solid var(--main-text-color);
     }
   }
 }
